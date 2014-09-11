@@ -1,0 +1,33 @@
+= Installer une ubuntu
+
+* Installer les Guest Additions
+[source,bash]
+sudo apt-get update
+sudo apt-get install dkms
+sudo apt-get install build-essential
+sudo reboot
+sudo apt-get install virtualbox-guest-dkms
+sudo reboot
+
+* Communiquer par SSH avec l'invité
+[source,bash]
+-----
+sudo apt-get install openssh-server
+-----
+
+Puis modifier la redirection de port en suivant
+http://stackoverflow.com/questions/5906441/how-to-ssh-to-a-virtualbox-guest-externally-through-a-host
+
+* Installer docker
+[source,bash]
+sudo apt-get install docker.io
+sudo ln -sf /usr/bin/docker.io  /usr/local/docker
+sudo sed -i '$acomplete -F _docker docker' /etc/bash_completion.d/docker.io
+apt-get install apt-transport-https
+sudo apt-get install apt-transport-https
+sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 36A1D7869245C8950F966E92D8576A8BA88D21E9
+sudo sh -c "echo deb https://get.docker.io/ubuntu docker main > /etc/apt/sources.list.d/docker.list"
+sudo apt-get install lxc-docker
+
+* Communiquer par ssh
+http://stackoverflow.com/questions/5906441/how-to-ssh-to-a-virtualbox-guest-externally-through-a-host
