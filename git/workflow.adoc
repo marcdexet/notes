@@ -43,4 +43,4 @@ Switched to a new branch 'alpha'
 
 
 == git pull vs  git fetch
-`git pull` ==> `git fetch; git merge`
+`git pull` => `git fetch; git merge`
