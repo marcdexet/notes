@@ -10,8 +10,8 @@ Quelques vérités à se mettre dans le crane
 ** exemple
  +docker *run* -t -i _nom_image_ /bin/bash+
 * Un _container_ **n'est pas stateless**, il y a confusion entre les commandes _run_ et _start_
-** la commande **run** créé un nouveau container
-** la commande **start** reprend le container à son dernrier état
+** la commande **run** créé un nouveau container à partir d'une image
+** la commande **start** reprend le container à son dernier état
 
 
 
