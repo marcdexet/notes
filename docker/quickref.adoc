@@ -1,13 +1,27 @@
+=
+
+:toc:
+
 == Mise au point
 Quelques vérités à se mettre dans le crane
 
-* Les _images_ sont **immutables**
-* Les _containers_ sont basés sur les _images_
-* Les _containers_ sont **stateless**
-* Les actions sur un _container_ ne sont persistées que pour donner une **nouvelle** _image_
+* Une _image_ est **immutable**
+* Un _container_ se créér en exécutant une _image_
+** exemple
+ `docker *run* -t -i _nom_image_ /bin/bash`
+* Un _container_ sont **stateless**
+* Un actions sur un _container_ ne sont persistées que pour donner une **nouvelle** _image_
 
 
 == Quelques commandes à retenir
+
+=== Arrêter/supprimer tous les containers
+
+[source,bash]
+----
+docker stop $(docker ps -a -q)
+docker rm $(docker ps -a -q)
+----
 
 === Quelles sont les dernières actions sur un container
 
