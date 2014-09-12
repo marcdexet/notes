@@ -6,5 +6,11 @@ Notes prises lors d'une formation git
 [source,bash]
 ----
 mkdir myproject
-
+cd myproject
+git init
+vi README
+# création du fichier README
+git add .
+git remote add origin https://forge-rec.git.cnrs.fr/formation/git-meudon-3.git
+git push origin master
 ----
