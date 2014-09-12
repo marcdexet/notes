@@ -1,0 +1,59 @@
+= Commandes utiles
+V 0.1 Marc DEXET (marc.dexet@dsi.cnrs.fr)
+Documentation en français
+
+= vérifier que les règles de .gitignore fonctionnent 
+Utiliser la commande check-ignore
+
+[source,bash]
+git check-ignore -nv ./**/*
+
+== Supprimer un fichier du projet
+[source,bash]
+git rm monfichier.txt
+
+== Supprimer un fichier de l'index
+[source,bash]
+git rm --cached readme.txt
+
+== Revenir à l'état initial 
+[source,bash]
+git reset HEAD benchmarks.rb
+
+[source,bash]
+git log
+
+
+== Récupérer une branche distante
+[source,bash]
+mkdir myprojet
+cd myprojet
+git init
+git remote add origin https://github.com/angular/angular.js.git
+git pull HEAD
+
+
+== Travailler avec les branches 
+
+=== Première solution
+
+* se mettre sur le master
+[source,bash]
+----
+git checkout master 
+----
+
+* Créer une branche
+[source,bash]
+----
+git branch correction
+----
+
+* Faire pointer l'espace de travail sur la branche _correction_
+[source,bash]
+----
+git checkout correction 
+----
+
+
+
