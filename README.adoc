@@ -1,2 +1,3 @@
-notes
-=====
+= Notes
+
+Ceci contient les notes glanées à droite à gauche
