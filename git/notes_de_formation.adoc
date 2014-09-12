@@ -54,6 +54,11 @@ git branch correction
 ----
 git checkout correction 
 ----
-
-
-
+* Après quelques modification, fusionner avec master
+[source,bash]
+----
+git add .
+git commit -m "ajout notes de cours"
+git checkout master
+git merge correction
+----
