@@ -16,3 +16,19 @@ git push
 # il demande login et mot de passe
 git push origin master
 ----
+
+
+== Voir les branches sur le remote
+[source,bash]
+----
+git remote show origin
+* remote origin
+  Fetch URL: https://forge-rec.git.cnrs.fr/formation/git-meudon-3.git
+  Push  URL: https://forge-rec.git.cnrs.fr/formation/git-meudon-3.git
+  HEAD branch: master
+  Remote branches:
+    alpha  tracked
+    master tracked
+  Local ref configured for 'git push':
+    master pushes to master (local out of date)
+----
