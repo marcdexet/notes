@@ -63,6 +63,9 @@ git checkout master
 git merge correction
 ----
 
+== Rebase
+`rebase` sert à réécrire l'historique de l'évolution des source
+
 == FAQ 
 === Je me retrouve avec un detached HEAD
 
