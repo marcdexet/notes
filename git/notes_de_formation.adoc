@@ -62,3 +62,9 @@ git commit -m "ajout notes de cours"
 git checkout master
 git merge correction
 ----
+
+== FAQ 
+=== Je me retrouve avec un detached HEAD
+
+Cela veut dire que vous probablement avez fait un `checkout` sur un `tag`, et donc que votre répertoire de travail ne correspond plus à une branche.
+la 'tête' est détachée. Ceci n'est que pour visualiser les fichiers car il est impossible de `committer` en dehors d'une branche.
