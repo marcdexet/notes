@@ -68,3 +68,9 @@ git merge correction
 
 Cela veut dire que vous probablement avez fait un `checkout` sur un `tag`, et donc que votre répertoire de travail ne correspond plus à une branche.
 la 'tête' est détachée. Ceci n'est que pour visualiser les fichiers car il est impossible de `committer` en dehors d'une branche.
+
+La bonne démarche est la suivante :
+[source,bash]
+----
+git checkout nom_du_tag -b nom_nouvelle_branche 
+----
