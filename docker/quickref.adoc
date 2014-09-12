@@ -1,4 +1,4 @@
-=
+= QuickRef
 
 :toc:
 
@@ -8,7 +8,7 @@ Quelques vérités à se mettre dans le crane
 * Une _image_ est **immutable**
 * Un _container_ se créér en exécutant une _image_
 ** exemple
- `docker *run* -t -i _nom_image_ /bin/bash`
+ docker *run* -t -i _nom_image_ /bin/bash
 * Un _container_ sont **stateless**
 * Un actions sur un _container_ ne sont persistées que pour donner une **nouvelle** _image_
 
