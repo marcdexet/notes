@@ -32,3 +32,11 @@ git remote show origin
   Local ref configured for 'git push':
     master pushes to master (local out of date)
 ----
+
+== Passer à une branche sur le _remote_
+[source,bash]
+----
+$ git checkout alpha
+Branch alpha set up to track remote branch alpha from origin.
+Switched to a new branch 'alpha'
+----
