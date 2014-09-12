@@ -1,4 +1,10 @@
 = Workflows
 Notes prises lors d'une formation git
 
+== Créer un projet sur le serveur depuis le local
 
+[source,bash]
+----
+mkdir myproject
+
+----
