@@ -19,6 +19,7 @@ git push origin master
 
 
 == Voir les branches sur le remote
+* avec git remote show
 [source,bash]
 ----
 git remote show origin
@@ -31,6 +32,14 @@ git remote show origin
     master tracked
   Local ref configured for 'git push':
     master pushes to master (local out of date)
+----
+* avec git branch -r
+[source,bash]
+----
+$ git branch -r
+  origin/alpha
+  origin/branche_mma
+  origin/master
 ----
 
 == Passer à une branche sur le _remote_
