@@ -9,8 +9,10 @@ Quelques vérités à se mettre dans le crane
 * Un _container_ se créér en exécutant une _image_
 ** exemple
  +docker *run* -t -i _nom_image_ /bin/bash+
-* Un _container_ sont **stateless**
-* Un actions sur un _container_ ne sont persistées que pour donner une **nouvelle** _image_
+* Un _container_ **n'est pas stateless**, il y a confusion entre les commandes _run_ et _start_
+** la commande **run** créé un nouveau container
+** la commande **start** reprend le container à son dernrier état
+
 
 
 == Quelques commandes à retenir
