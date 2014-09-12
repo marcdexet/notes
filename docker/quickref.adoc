@@ -1,3 +1,33 @@
 == Mise au point
-=== Les images
-*Les images sont **immutables**
+Quelques vérités à se mettre dans le crane
+
+* Les _images_ sont **immutables**
+* Les _containers_ sont basés sur les _images_
+* Les _containers_ sont **stateless**
+
+
+== Quelques commandes à retenir
+
+=== Quelles sont les dernières actions sur un container
+
+[source,bash]
+----
+#Diff entre le container et son image
+docker diff e56ed98
+----
+
+Exemple
+[source,bash]
+----
+# quelques manipulations
+mde@ubuntudocker:~/DOCKERWS/NODEJS$ sudo docker run -t -i 35d2d /bin/bash
+root@e95bc797640f:/# vi README.adoc
+root@e95bc797640f:/# cat README.adoc
+= Notes à moi même
+root@e95bc797640f:/# exit
+exit
+# regardons les diff
+mde@ubuntudocker:~/DOCKERWS/NODEJS$ sudo docker diff e95
+A /.bash_history
+A /README.adoc
+----
