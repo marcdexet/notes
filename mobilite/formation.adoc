@@ -1,1 +1,3 @@
 = Note sur la formation mobilité
+
+Utilisation de balsamic ( http://balsamiq.com/download/ )
