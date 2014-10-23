@@ -68,6 +68,18 @@ git merge correction
 == Rebase
 `rebase` sert à réécrire l'historique de l'évolution des source
 
+== Renommer un fichier
+[source,bash]
+----
+git mv ancien_nom nouveau_nom
+----
+
+== Déplacer un fichier
+[source,bash]
+----
+git mv ancien_nom destination/
+----
+
 == FAQ 
 === Je me retrouve avec un detached HEAD
 
