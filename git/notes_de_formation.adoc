@@ -25,6 +25,21 @@ git reset HEAD benchmarks.rb
 [source,bash]
 git log
 
+== Mettre en remise (stash)
+Si des doivent être mis de côté
+[source,bash]
+git stash
+
+Pour les récupérer 
+[source,bash]
+----
+// Avoir la liste
+git stash list
+stash@{0}: WIP on step1: 773a787 create person module
+// récupérer le dernier remisage
+git stash apply
+----
+
 
 == Récupérer une branche distante
 [source,bash]
