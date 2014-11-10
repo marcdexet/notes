@@ -106,3 +106,25 @@ La bonne démarche est la suivante :
 ----
 git checkout nom_du_tag -b nom_nouvelle_branche 
 ----
+
+=== J'ai un conflit avec le remote
+=== Automatic merge failed; fix conflicts and then commit the result.
+J'ai fait des modifications, mais je ne suis pas à jour avec le _remote_.
+Quand je fais un _push_, j'ai un message du genre
+
+----
+ CONFLICT (content): Merge conflict in appinfo/bidon.php
+Automatic merge failed; fix conflicts and then commit the result.
+----
+
+* Chercher les fichiers à fusionner avec  
+----
+git status
+---- 
+* Les éditer et fusionner les bouts de code indiqués
+* Les ajouter à l'index
+----
+git add mon_fichier
+----
+* *faire un commit*
+* faire un push
