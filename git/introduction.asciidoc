@@ -1,0 +1,21 @@
+= Introduction à git
+
+== Principes de base
+
+* dépot
+* index
+* zone de travail
+
+== Cycle
+
+* Création d'un dépot
+* Paramétrage
+* status
+----
+git status
+----
+* premier ajout 
+[source,bash]
+----
+git add myfile.txt
+----
