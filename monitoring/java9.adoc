@@ -1,0 +1,18 @@
+= Java 9
+Marc DeXeT 
+
+Notes de veilles sur java 9
+
+L'apport de java 9 est une architecture modulaire permettant de charger uniquement les parties pertinentes.
+Cette décomposition se fait sous forme de jar modulaires et se fait se façon progressive depuis java 8.
+
+Dans http://soat.developpez.com/tutoriels/java/futures-fonctionnalites-modulaires-java9/[Tutoriel pour comprendre les futures fonctionnalités modulaires de Java 9], 
+j'apprends que java 8 a des profils _compactes_ permettant de générant un JRE adapté.
+
+Java ressemblera à un maven avec une gestion de dépendance par module
+
+== Autres pistes 
+l'utilisation de `jrecreate` et `jdeps` dans java 8 
+
+* cf. https://docs.oracle.com/javase/8/embedded/develop-apps-platforms/jrecreate.htm
+* cf. https://docs.oracle.com/javase/8/docs/technotes/tools/unix/jdeps.html
